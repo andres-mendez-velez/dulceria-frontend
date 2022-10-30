@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Noto+Sans&display=swap" rel="stylesheet">
+  <title>Mi Dulce Online</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stripe">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Carrito de Compras</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="nombreTienda cover d-flex justify-content-center align-items-center flex-column">
+      <h1>
+        Mi Dulce Online
+      </h1>
+      <p>
+        "Dulces recuerdos al alcance de un clic"
+      </p>
+      <button class="btn btn-primary" onclick="window.location.href='acercade.html'">Conóce más</button>
+    </div>
+  </header>
+
+  <!--Tarjetas:-->
+  <section>
+    <div class="container mt-5 mb-5">
+      <!--mt-5 para establecer una margen m solo arriba top al maximo valor de bootstrap-->
+      <!--mb-5 Margen hacia abajo de 5-->
+      <div class="row justify-content-center">
+        <!--row para un sistema de cuadricula horizontal (hacer que las tarjetas aparezcan horizontalmente)-->
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <!-- col-12 genera un espacio entre las tarjetas horizontalmente y tiene un maximo de 12 grids, por lo que en este caso ocuparia toda la pantalla-->
+          <!-- col-sm-6 genera una columna responsive que permite establecer cuanto vamos a ocupar ciertos dispositivos como tablets-->
+          <!-- col-md-4 para pantallas "medianas" cuatro que utilice 4 grids -->
+          <!-- col-lg-3 para pantallas mas grandes decimos que use 3 grids o cuadriculas-->
+          <div class="card">
+            <div title="Imágen de repostero" class="cover cover-small"
+              style="background-image: url('./imagenes/imagen-reposteria.jpg')"></div>
+            <div class="card-body">
+              <h5 class="card-title">Trabajamos con expertos</h5>
+              <p class="card-text">
+                Nuestro equipo está conformado por personas calificadas que dedican su vida a ofrecerte los sabores que
+                buscas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <div class="card">
+            <div title="Imágen de planta creciendo entre monedas" class="cover cover-small"
+              style="background-image: url('./imagenes/imagen-finanzas.jpg')" />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Comercio justo</h5>
+            <p class="card-text">
+              No hay nada más importante para nosotros que ser proveedores de confianza para todos nuestros clientes,
+              por lo que tratamos tú economía con la mayor seriedad posible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <div title="Imágen de variedad de dulces" class="cover cover-small"
+            style="background-image: url('./imagenes/imagen-variedad.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">Variedad para todos los gustos</h5>
+            <p class="card-text">
+              Ofrecemos el 90% de productos de repostería, heladería y panadería de la región.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-5">
+          <img src="./imagenes/IceCreamDoodle.svg" alt="Ilustración de persona abrazando una crema de helado">
+        </div>
+
+        <div class="col-12 col-sm-6">
+          <h3>
+            ¡Dale sabor a tu día con nuestros productos!
+          </h3>
+          <p>
+            En Mi Dulce Online te damos varias opciones, puedes hacer tu pedido a domicilio o recogerlo personalmente en
+            <a href="#mapa">nuestra sede</a>.
+          </p>
+          <p>
+            Suscríbete a nuestro boletín informativo para que no te pierdas ninguna de nuestras noticias y ofertas.
+          </p>
+        </div>
+      </div>
+      <form action="">
+        <!-- action sirve para poner la página web a donde se va a enviar la información -->
+        <label class="form-label" for="email">Correo electrónico:</label>
+        <div class="d-flex">
+          <!-- d-flex es para alinear los componenentes ya sea vertical u horizontalmente -->
+          <div class="flex-fill mr-2">
+            <input type="email" id="email" class="form-control" placeholder="nombre@email.com" />
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <!-- Tira de productos -->
+    <div class="container mt-5 mb-5" id="stripe">
+      <div class="product-stripe">
+        <div class="stripe-container">
+
+          <div class="card">
+            <div title="Imágen de galletas caseras" class="cover cover-small"
+              style="background-image: url(./imgs-productos/galletas.jpg)"></div>
+            <div class="card-body">
+              <h5 class="card-title">Galletas artesanales</h5>
+              <span class="badge text-bg-info">$3500 COP</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div title="Imágen de Gomitas Cherry" class="cover cover-small"
+              style="background-image: url(./imgs-productos/gomas.jpg)"></div>
+            <div class="card-body">
+              <h5 class="card-title">Gomitas Cherry</h5>
+              <span class="badge text-bg-info">$700 COP</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div title="Imágen de Helado Cool Happiness" class="cover cover-small"
+              style="background-image: url(./imgs-productos/helado.jpg)"></div>
+            <div class="card-body">
+              <h5 class="card-title">Helado Cool Happiness</h5>
+              <span class="badge text-bg-info">$2000 COP</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div title="Imágen de Pastel Italia" class="cover cover-small"
+              style="background-image: url(./imgs-productos/pastel.jpg)"></div>
+            <div class="card-body">
+              <h5 class="card-title">Pastel Venecia</h5>
+              <span class="badge text-bg-info">$3000 COP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mt-5 mb-5" id="mapa">
+      <h4>
+        Aquí nos vemos:
+      </h4>
+      <p>
+        Cra. 23 #311, Manizales, Caldas
+      </p>
+      <div class="responsive-iframe">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4744.4192205607!2d-75.50879088991341!3d5.066303625916498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476ff140d6f757%3A0x29e55717d7a23f19!2sCable%20%C3%81ereo%20Manizales%20-%20Estaci%C3%B3n%20Fundadores!5e0!3m2!1ses-419!2sco!4v1667134740308!5m2!1ses-419!2sco"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
